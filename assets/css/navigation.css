@@ -1,0 +1,10 @@
+nav a {
+    color: red;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: saddlebrown;
+}
