@@ -9,7 +9,7 @@ function HomePage() {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         
-        <h1 className="title">Welcome to Next.js!</h1>
+        <h1 className="title">Merhaba!</h1>
         <style jsx>{`
         .title {
           color: white;
