@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 
-function HomePage() {
+function HomePage({ character }) {
     return (
       <Layout>
         <Head>
@@ -11,14 +11,22 @@ function HomePage() {
         
         <h1 className="title">Merhaba!</h1>
         <style jsx>{`
-        .title {
-          color: white;
-          background: blue;
-        }
+         
       `}</style>
       
+
       </Layout>
     )
   }
+
+export async function getStaticProps(context) {
+  // data fetch
+  const data = await fetch("https://rickandmortyapi.com/api/character")
+  return {
+    props: {
+      character: []
+    }
+  }
+}
   
 export default HomePage
